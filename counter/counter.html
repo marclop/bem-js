@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="counter" data-component="counter">
+        <button data-inc class="counter__increment" type="button">Increment</button>
+        <button data-dec class="counter__decrement" type="button">Decrement</button>
+        <p data-val class="counter__value">0</p>
+    </div>
+    <div class="counter" data-component="counter">
+        <button data-inc class="counter__increment counter__increment--green" type="button">Increment</button>
+        <button data-dec class="counter__decrement counter__decrement--red" type="button">Decrement</button>
+        <p data-val class="counter__value">0</p>
+    </div>
+    <div class="total" data-component="total">
+        <p data-val class="total__value">0</p>
+    </div>
+    <script src="../EventEmitter.js"></script>
+    <script src="model.js"></script>
+    <script src="counter.js"></script>
+    <script src="total.js"></script>
+    <script src="parser.js"></script>
+</body>
+
+</html>
